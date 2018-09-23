@@ -7,8 +7,8 @@ First experiment with [socket.io](https://socket.io/). Weird retro look was inte
 let express = require("express")
 let app = express()
 server = http.createServer(app).listen(PORT)
-require('./chat/index')(server);
-app.use('/chat', express.static(__dirname+'/chat/public'));
+require('index')(server);
+app.use('/', express.static(__dirname+'/public'));
 ```
 # Screenshot
 <img src="https://github.com/tuhnik/socket-chat/blob/master/screenshot/screenshot.png?raw=true">
